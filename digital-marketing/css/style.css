@@ -1698,11 +1698,16 @@ span {
   .portfolio-foot-detail {
     padding-top: 70%;
   }
+   .mns{
+    color: red !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .portfolio-foot-detail {
     padding-top: 35%;
   }
+
+ 
 }
 
 @media screen and (width: 2560px) {
@@ -1795,6 +1800,10 @@ span {
     left: 49%;
     top: 30%;
   }
+
+     .mns {
+       color: rgb(255, 255, 255) !important;
+     }
 }
 
 @media screen and (width: 1024px) {
