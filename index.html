@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -885,7 +887,7 @@
                 <div class="col-12 col-md-5">
                   <div class="form-group">
                     <input
-                      class="form-control"
+                      class="form-control fullname"
                       type="text"
                       placeholder="Your Name"
                       required
@@ -896,7 +898,7 @@
 
                   <div class="form-group">
                     <input
-                      class="form-control"
+                      class="form-control email"
                       type="email"
                       placeholder="Email Address*"
                       required
@@ -907,7 +909,7 @@
 
                   <div class="form-group">
                     <input
-                      class="form-control"
+                      class="form-control subject"
                       type="text"
                       placeholder="Subject"
                       id="user_subject"
@@ -919,7 +921,7 @@
                 <div class="col-12 col-md-7">
                   <div class="form-group">
                     <textarea
-                      class="form-control"
+                      class="form-control message"
                       placeholder="Your Message"
                       required
                       rows="7"
@@ -932,7 +934,7 @@
 
               <button
                 type="button"
-                class="btn btn-slider pink-btn rounded-pill w-100 contact_btn"
+                class="btn btnn btn-slider pink-btn rounded-pill w-100 contact_btn"
                 id="submit_btn"
               >
                 <i
@@ -1018,6 +1020,34 @@
 
     <!-- JavaScript -->
     <script src="vendor/js/bundle.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("KWxV8yAmllRrqi-Yq");
+      })();
+
+
+      let btn = document.querySelector(".btnn")
+      let email = document.querySelector(".email")
+      let fullname = document.querySelector(".fullname")
+       let subject = document.querySelector(".subject")
+        let message = document.querySelector(".message")
+
+        btn.addEventListener('click', ()=>{
+          var templateParams = {
+            fullname: fullname.value,
+            email: email.value,
+            subject: subject.value,
+            message: message.value,
+          };
+          emailjs.send('service_qumstvh', 'template_6m4td5d', templateParams)
+            .then(function (response) {
+              alert('Your Request haa being sent successfully!');
+            }, function (error) {
+              console.log('FAILED...', error);
+            });
+        })
+
+    </script>
 
     <!-- Plugin Js -->
     <script src="vendor/js/owl.carousel.min.js"></script>
