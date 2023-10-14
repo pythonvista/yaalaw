@@ -2,7 +2,7 @@
   <section
     class="relative py-10 min-h-[60vh] overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32"
   >
-    <div class="absolute inset-0">
+    <div class="absolute nn inset-0">
       <img
         class="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left"
         src="https://i.imgur.com/QyzSgC5.jpg"
@@ -40,4 +40,10 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+
+.nn{
+  background: linear-gradient(black, black);
+}
+
+</style>
