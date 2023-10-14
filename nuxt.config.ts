@@ -5,11 +5,11 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Medfest Care ',
+      title: 'Yaa Law',
       meta: [
         {
           name: 'description',
-          content: 'Medfest care for health insurance',
+          content: 'Digital Law Consult',
         },
       ],
       link: [
