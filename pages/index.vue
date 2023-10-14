@@ -1,8 +1,9 @@
 <template>
   <div>
    <HomeHeroSection id="home"></HomeHeroSection>
-    <HomeAbout id="about"></HomeAbout>
+   
     <HomeWorks></HomeWorks>
+    <HomeAbout id="about"></HomeAbout>
     <HomePlans  id="practise"></HomePlans>
     <HomeForhealthcare  id="teams"></HomeForhealthcare>
     <HomeFeatures></HomeFeatures>
