@@ -26,7 +26,7 @@
               >
             </p>
             <div class="pt-10 flex xs:justify-center md:justify-start">
-              <q-btn color="white" class="text-black"><span class="text-black">Book an appointment</span> </q-btn>
+              <q-btn to="mailto:info@yaalawconsult.com" color="white" class="text-black"><span class="text-black">Book an appointment</span> </q-btn>
             </div>
           </div>
 
