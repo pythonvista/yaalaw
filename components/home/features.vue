@@ -288,7 +288,7 @@ h1 {
   }
   .containern > div:nth-child(5) {
     /* Stijl voor de middelste kolom (rij 2, kolom 2) */
-    width: 340px;
+    width: 270px;
   }
   .thumbnails1 img {
     width: 100px;
