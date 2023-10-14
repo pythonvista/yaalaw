@@ -26,7 +26,11 @@
               >
             </p>
             <div class="pt-10 flex xs:justify-center md:justify-start">
-              <q-btn to="mailto:info@yaalawconsult.com" color="white" class="text-black"><span class="text-black">Book an appointment</span> </q-btn>
+              <a
+            href="mailto:info@yaalawconsult.com"
+            class="bg-[#8c4f0d]  xs:flex lg:hidden cursor-pointer text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+            >Book Appointment</a
+          >
             </div>
           </div>
 
