@@ -28,7 +28,7 @@
           >
         </div>
         <div
-          class="xs:hidden flex-1 justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+          class="xs:hidden  justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
         >
           <ul
             class="flex flex-col justify-center items-center w-full font-medium lg:flex-row lg:space-x-8 lg:mt-0"

@@ -21,10 +21,10 @@
         <h2
           class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl"
         >
-         About <br class="xs:block md:hidden"> Yaalaw Consult
+         About <br class="xs:block md:hidden"> YAA law Consult
         </h2>
         <p class="mt-4 xs:px-3 md:px-0 text-base text-gray-200">
-         The cannon upon which any successful organisation predicating its objectives on continued life, prosperity and growth is based on sound and proper management, skills and formulated policies, no safeguard is too much to ensure that competent hands handle and execute the key result area within the requisite regulated framework for any arising legal issue(s) or timely advise against preventive occurrences It is therefore no gainsaying that since we offer within our solid legal services pan-disciplinary knowledge in general administration and dispute resolution. Consequent upon the foregoing, our Firm is always ready and able to handle with highest degree of commitment to discharge any roles within our legal expertise to our clients At YAA Law Consult, our services are well expanded and articulated in high compliance with international corporate practice which have attracted Governments, Public and Private Organisations and individuals as our clients.
+         The cannon upon which any successful organisation predicating its objectives on continued life, prosperity and growth is based on sound and proper management, skills and formulated policies.<br>No safeguard is too much to ensure that competent hands handle and execute the key result area within the requisite regulated framework for any arising legal issue(s) or timely advise against preventive occurrences It is therefore no gainsaying that since we offer within our solid legal services pan-disciplinary knowledge in general administration and dispute resolution. Consequent upon the foregoing, our Firm is always ready and able to handle with highest degree of commitment to discharge any roles within our legal expertise to our clients At YAA Law Consult, our services are well expanded and articulated in high compliance with international corporate practice which have attracted Governments, Public and Private Organisations and individuals as our clients.
         </p>
 
       

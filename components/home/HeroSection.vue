@@ -16,7 +16,7 @@
             <h1
               class="font-sans text-lg xs:text-center md:text-left font-normal tracking-tight text-white text-opacity-70"
             >
-              Yaa Law Consult
+              YAA Law Consult
             </h1>
             <p class="mt-6 tracking-tighter xs:text-center md:text-left text-white">
               <span class="font-sans font-normal xs:text-center xs:text-4xl md:text-7xl">Providing Quality</span
@@ -28,7 +28,7 @@
             <div class="pt-10 flex xs:justify-center md:justify-start">
               <a
             href="mailto:info@yaalawconsult.com"
-            class="bg-[#8c4f0d]  xs:flex lg:hidden cursor-pointer text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+            class="bg-[#8c4f0d]  xs:flex  cursor-pointer text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
             >Book Appointment</a
           >
             </div>
