@@ -8,7 +8,7 @@
       <div class="thumbnail thumbnails2">
         <img
           class="ani-1 im1"
-          src="https://i.imgur.com/b2SLPNo.jpg"
+          src="https://i.imgur.com/5QHm7z1.jpg"
           alt="Image 1"
           @click="openImage('im1')"
         />
@@ -179,15 +179,26 @@ h1 {
   text-align: center;
 }
 
-.large-thumbnail{
+#large-thumbnail{
   max-height: 500px;
   overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
-.large-thumbnail, img{
-  width: 100%;
-  object-fit: cover;
+#large-thumbnail, img{
+ 
+  
+
 }
 
+.large-thumbnail img{
+  width: 100%;
+  object-fit: cover;
+  
+}
 .containern > div:nth-child(5) {
   /* Stijl voor de middelste kolom (rij 2, kolom 2) */
   width: 640px;
