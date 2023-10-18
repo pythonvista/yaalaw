@@ -10,8 +10,9 @@
         <p
           class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-500"
         >
-       You can request by contacting any of the numbers below or fill our online form.<br>
-To request service on any of our practices:
+          You can request by contacting any of the numbers below or fill our
+          online form.<br />
+          To request service on any of our practices:
         </p>
       </div>
 
@@ -37,14 +38,13 @@ To request service on any of our practices:
               </svg>
               <p class="mt-6 text-lg font-medium text-gray-900">
                 +234 811 1111 470
-
               </p>
               <p class="mt-1 text-lg font-medium text-gray-900">
-           +234 906 0008 147
+                +234 906 0008 147
               </p>
 
-                 <p class="mt-1 text-lg font-medium text-gray-900">
-            +44 740 5646 162
+              <p class="mt-1 text-lg font-medium text-gray-900">
+                +44 740 5646 162
               </p>
             </div>
           </div>
@@ -68,7 +68,6 @@ To request service on any of our practices:
               <p class="mt-6 text-md font-medium text-gray-900">
                 info@yaalawconsult.com
               </p>
-             
             </div>
           </div>
 
@@ -95,7 +94,8 @@ To request service on any of our practices:
                 />
               </svg>
               <p class="mt-6 text-lg font-medium leading-relaxed text-gray-900">
-               Plot 767, Charles owaba Street, Wuje, Abuja, Federal Capital Territory.
+                Plot 767, Charles owaba Street, Wuje, Abuja, Federal Capital
+                Territory.
               </p>
             </div>
           </div>
@@ -104,7 +104,7 @@ To request service on any of our practices:
         <div class="mt-6 overflow-hidden bg-white rounded-xl">
           <div class="px-6 py-12 sm:p-12">
             <h3 class="text-3xl font-semibold text-center text-gray-900">
-             Service Request Form
+              Service Request Form
             </h3>
 
             <form action="#" method="POST" class="mt-14">
@@ -117,6 +117,7 @@ To request service on any of our practices:
                     <input
                       type="text"
                       name=""
+                      v-model="dform.fullname"
                       id=""
                       placeholder="Full name"
                       class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-[#48caf2] caret-[#48caf2]"
@@ -132,6 +133,7 @@ To request service on any of our practices:
                     <input
                       type="email"
                       name=""
+                      v-model="dform.email"
                       id=""
                       placeholder="Email"
                       class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-[#48caf2] caret-[#48caf2]"
@@ -148,37 +150,24 @@ To request service on any of our practices:
                       type="tel"
                       name=""
                       id=""
+                      v-model="dform.phone"
                       placeholder="Phone number"
                       class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-[#48caf2] caret-[#48caf2]"
                     />
                   </div>
                 </div>
 
-      <div>
+                <div>
                   <label for="" class="text-base font-medium text-gray-900">
-                    Street Address 
+                    Street Address
                   </label>
                   <div class="mt-2.5 relative">
                     <input
                       type="text"
                       name=""
+                      v-model="dform.address"
                       id=""
                       placeholder="Street Address "
-                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-[#48caf2] caret-[#48caf2]"
-                    />
-                  </div>
-                </div>
-
-        <div>
-                  <label for="" class="text-base font-medium text-gray-900">
-                    Location
-                  </label>
-                  <div class="mt-2.5 relative">
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      placeholder="State / Province / Region"
                       class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-[#48caf2] caret-[#48caf2]"
                     />
                   </div>
@@ -190,6 +179,7 @@ To request service on any of our practices:
                   </label>
                   <div class="mt-2.5 relative">
                     <input
+                      v-model="dform.company"
                       type="text"
                       name=""
                       id=""
@@ -207,6 +197,7 @@ To request service on any of our practices:
                     <textarea
                       name=""
                       id=""
+                      v-model="dform.message"
                       placeholder=""
                       class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:border-[#48caf2] caret-[#48caf2]"
                       rows="4"
@@ -215,12 +206,14 @@ To request service on any of our practices:
                 </div>
 
                 <div class="sm:col-span-2">
-                  <button
-                    type="submit"
+                  <q-btn
+                    @click="Send"
+                    type="button"
+                    :loading="loading"
                     class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-[#48caf2] border border-transparent rounded-md focus:outline-none hover:bg-[#48caf2] focus:bg-[#48caf2]"
                   >
                     Submit
-                  </button>
+                  </q-btn>
                 </div>
               </div>
             </form>
@@ -232,7 +225,33 @@ To request service on any of our practices:
 </template>
 
 <script>
-export default {};
+import emailjs from '@emailjs/browser';
+emailjs.init('KWxV8yAmllRrqi-Yq');
+export default {
+  data: () => ({
+    dform: {},
+    loading: false,
+  }),
+  methods: {
+    async Send() {
+      try {
+        this.loading = true
+        await emailjs.send(
+          'service_qumstvh',
+          'template_6m4td5d',
+          this.dform
+        );
+        this.loading = false
+        this.dform = {}
+        ShowSnack('Mail Sent Successfully', 'positive')
+      } catch (err) {
+        console.log(err);
+        this.loading = false
+        ShowSnack('Error Sending Mail', 'negative')
+      }
+    },
+  },
+};
 </script>
 
 <style></style>

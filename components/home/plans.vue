@@ -147,6 +147,40 @@
             </p>
           </div>
         </div>
+        <div class="overflow-hidden bg-white rounded shadow">
+          <div class="p-8">
+            <div class="flex items-center justify-start">
+              <img
+                class="flex-shrink-0 w-10 h-auto"
+                src="https://i.imgur.com/ooKXCNy.png"
+                alt=""
+              />
+              <div class="ml-5 mr-auto">
+                <p class="text-md font-bold text-black">CORPORATE AND COMMERCIAL LAW</p>
+              </div>
+            
+            </div>
+            <p class="text-base leading-relaxed text-gray-600 mt-7">
+              Corporate and commercial practice involves representation of private and public owned companies in business formation</p>
+          </div>
+        </div>
+        <div class="overflow-hidden bg-white rounded shadow">
+          <div class="p-8">
+            <div class="flex items-center justify-start">
+              <img
+                class="flex-shrink-0 w-10 h-auto"
+                src="https://i.imgur.com/rf7LBXh.png"
+                alt=""
+              />
+              <div class="ml-5 mr-auto">
+                <p class="text-md font-bold text-black">ALTERNATIVE DISPUTE RESOLUTION</p>
+              </div>
+            
+            </div>
+            <p class="text-base leading-relaxed text-gray-600 mt-7">
+              Our membership of the Negotiation and Conflict Management Group (NCMG) is based on our firm believe that disputes can better be settled at the earliest possible time</p>
+          </div>
+        </div>
       </div>
 
       
