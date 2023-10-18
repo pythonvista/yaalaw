@@ -55,9 +55,7 @@
     >
       <v-card>
         <v-toolbar dark color="#8c4f0d">
-          <v-btn icon dark @click="dialog = false">
-            <v-icon>mdi-close</v-icon>
-          </v-btn>
+         
           <v-toolbar-title class="text-white"> {{ dform.name }}</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-toolbar-items>
