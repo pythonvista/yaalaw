@@ -207,6 +207,7 @@
 
                 <div class="sm:col-span-2">
                   <q-btn
+                  :disable="!isValid"
                     @click="Send"
                     type="button"
                     :loading="loading"
@@ -232,6 +233,14 @@ export default {
     dform: {},
     loading: false,
   }),
+  computed:{
+    isValid(){
+      if(this.dform.fullname && this.dform.email && this.dform.message){
+        return true
+      }
+      return false
+    }
+  },
   methods: {
     async Send() {
       try {
