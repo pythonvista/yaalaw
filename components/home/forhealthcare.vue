@@ -25,7 +25,7 @@
               :src="team.img"
               alt=""
             />
-            <p class="mt-8 text-lg font-semibold leading-tight">
+            <p class="mt-8 text-md font-semibold leading-tight">
               {{ team.name }}
             </p>
             <p class="mt-1 italic font-mono text-base leading-tight text-gray-600">
