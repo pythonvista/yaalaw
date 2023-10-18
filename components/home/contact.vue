@@ -199,7 +199,7 @@
                       id=""
                       v-model="dform.message"
                       placeholder=""
-                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:border-[#48caf2] caret-[#48caf2]"
+                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:border-[#8c4f0d] caret-[#8c4f0d]"
                       rows="4"
                     ></textarea>
                   </div>
@@ -210,7 +210,7 @@
                     @click="Send"
                     type="button"
                     :loading="loading"
-                    class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-[#48caf2] border border-transparent rounded-md focus:outline-none hover:bg-[#48caf2] focus:bg-[#48caf2]"
+                    class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-[#8c4f0d] border border-transparent rounded-md focus:outline-none hover:bg-[#c37b2e] focus:bg-[#8c4f0d]"
                   >
                     Submit
                   </q-btn>
