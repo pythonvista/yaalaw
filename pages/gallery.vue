@@ -1,10 +1,10 @@
 <template>
   <section
-    class="py-10 bg-white flex flex-col justify-center items-center sm:py-16 lg:py-10"
+    class="py-10 px-4 bg-white flex flex-col justify-center items-center sm:py-16 lg:py-10"
   >
-    <h1 class="text-black text-2xl font-bold underline ">Image Gallery</h1>
+    <h1 class="text-black mb-10 text-2xl font-bold underline ">Image Gallery</h1>
 
-    <div class="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid xs:grid-cols-1 md:grid-cols-2 gap-2 lg:grid-cols-3">
       <a
         href=""
         data-lightbox="homePortfolio"
@@ -140,8 +140,12 @@
 
 <script>
 export default {
-  setup() {},
-};
+  setup() {
+    definePageMeta({
+      layout: 'home',
+    });
+  },
+}
 </script>
 <style scoped>
 
