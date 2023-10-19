@@ -101,6 +101,7 @@
 </template>
 
 <script>
+
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
 // Import Swiper styles
