@@ -13,10 +13,9 @@
       </div>
 
       <div
-        class="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-4"
+        class="grid grid-cols-1 gap-8 mt-10 text-center place-items-center place-content-center lg:mt-24 sm:gap-x-8 md:grid-cols-2"
       >
       
-
         <div>
           <h3 class="font-bold text-7xl">
             <span
