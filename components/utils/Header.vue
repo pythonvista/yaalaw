@@ -53,7 +53,7 @@
             </li>
             <li>
               <a
-              @click="$router.push({path: '/conatct'})"
+              @click="$router.push({path: '/contact'})"
                 class="block pr-4 pl-3 text-black font-bold cursor-pointer hover:text-black rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0"
                 >Contact</a
               >
@@ -127,7 +127,7 @@
             alt="Flowbite Logo"
           />
         </a>
-        <q-item-section>YAA Law</q-item-section>
+        <q-item-section>YAA Law Consult</q-item-section>
       </div>
     </v-navigation-drawer>
   </v-layout>
