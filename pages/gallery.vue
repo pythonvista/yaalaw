@@ -1,10 +1,10 @@
 <template>
-  <section
+  <!-- <section
     class="py-10 bg-white flex flex-col justify-center items-center sm:py-16 lg:py-10"
   >
     <h1 class="text-black">Image Gallery</h1>
     <div class="containern">
-      <!--------------rij 1 div 1  top-left --------------------->
+      
       <div class="thumbnail thumbnails2">
         <img
           class="ani-1 im1"
@@ -13,7 +13,6 @@
           @click="openImage('im1')"
         />
       </div>
-      <!--------------- rij 1 div 2 middle --------------------->
       <div class="thumbnail thumbnails1">
         <img
           class="ani-1 im2"
@@ -34,7 +33,6 @@
           @click="openImage('im4')"
         />
       </div>
-      <!------------- rij 1 div 3 top-right --------------------->
       <div class="thumbnail thumbnails2">
         <img
           class="ani-1 im5"
@@ -43,7 +41,6 @@
           @click="openImage('im5')"
         />
       </div>
-      <!--------------- rij 2 div 1 moet column naar beneden 2 afbeeldingen tot  height 437 px  --------------------->
       <div class="thumbnail thumbnails4">
         <img
           class="ani-1 im6"
@@ -67,7 +64,7 @@
 
       <div class="thumbnail" id="large-thumbnail">
         <img src="https://i.imgur.com/DP9UKVc.jpg" alt="Image 1" />
-        <!-- Images will be displayed here -->
+       
       </div>
       <div class="thumbnail thumbnails4">
         <img
@@ -126,9 +123,98 @@
         />
       </div>
     </div>
-  </section>
+  </section> -->
+
+  <template>
+  <swiper
+    :style="{
+      '--swiper-navigation-color': '#fff',
+      '--swiper-pagination-color': '#fff',
+    }"
+    :spaceBetween="10"
+    :navigation="true"
+    :thumbs="{ swiper: thumbsSwiper }"
+    :modules="modules"
+    class="mySwiper2"
+  >
+    <swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-1.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-2.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-3.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-4.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-5.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-6.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-7.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-8.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-9.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img src="https://swiperjs.com/demos/images/nature-10.jpg"
+    /></swiper-slide>
+  </swiper>
+  <swiper
+    @swiper="setThumbsSwiper"
+    :spaceBetween="10"
+    :slidesPerView="4"
+    :freeMode="true"
+    :watchSlidesProgress="true"
+    :modules="modules"
+    class="mySwiper"
+  >
+    <swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-1.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-2.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-3.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-4.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-5.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-6.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-7.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-8.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-9.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img src="https://swiperjs.com/demos/images/nature-10.jpg"
+    /></swiper-slide>
+  </swiper>
 </template>
 
+
+
+
+</template>
+<!-- 
 <script>
 export default {
   data: () => ({
@@ -150,9 +236,44 @@ export default {
     });
   },
 };
+</script> -->
+<script>
+  import { ref } from 'vue';
+  // Import Swiper Vue.js components
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  // Import Swiper styles
+  import 'swiper/css';
+
+  import 'swiper/css/free-mode';
+  import 'swiper/css/navigation';
+  import 'swiper/css/thumbs';
+
+
+  // import required modules
+  import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+
+  export default {
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    setup() {
+      const thumbsSwiper = ref(null);
+
+      const setThumbsSwiper = (swiper) => {
+        thumbsSwiper.value = swiper;
+      };
+
+      return {
+        thumbsSwiper,
+        setThumbsSwiper,
+        modules: [FreeMode, Navigation, Thumbs],
+      };
+    },
+  };
 </script>
-
-
+<!-- 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
@@ -323,4 +444,92 @@ h1 {
     width: 100%;
   }
 }
+</style> -->
+<style scoped>
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background: #000;
+  color: #000;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 </style>
