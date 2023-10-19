@@ -100,127 +100,15 @@
             </div>
           </div>
         </div>
-
-        <div class="mt-6 overflow-hidden bg-white rounded-xl">
-          <div class="px-6 py-12 sm:p-12">
-            <h3 class="text-3xl font-semibold text-center text-gray-900">
-              Service Request Form
-            </h3>
-
-            <form action="#" method="POST" class="mt-14">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
-                <div>
-                  <label for="" class="text-base font-medium text-gray-900">
-                    Your name
-                  </label>
-                  <div class="mt-2.5 relative">
-                    <input
-                      type="text"
-                      name=""
-                      v-model="dform.fullname"
-                      id=""
-                      placeholder="Full name"
-                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-[#48caf2] caret-[#48caf2]"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label for="" class="text-base font-medium text-gray-900">
-                    Email address
-                  </label>
-                  <div class="mt-2.5 relative">
-                    <input
-                      type="email"
-                      name=""
-                      v-model="dform.email"
-                      id=""
-                      placeholder="Email"
-                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-[#48caf2] caret-[#48caf2]"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label for="" class="text-base font-medium text-gray-900">
-                    Phone number
-                  </label>
-                  <div class="mt-2.5 relative">
-                    <input
-                      type="tel"
-                      name=""
-                      id=""
-                      v-model="dform.phone"
-                      placeholder="Phone number"
-                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-[#48caf2] caret-[#48caf2]"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label for="" class="text-base font-medium text-gray-900">
-                    Street Address
-                  </label>
-                  <div class="mt-2.5 relative">
-                    <input
-                      type="text"
-                      name=""
-                      v-model="dform.address"
-                      id=""
-                      placeholder="Street Address "
-                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-[#48caf2] caret-[#48caf2]"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label for="" class="text-base font-medium text-gray-900">
-                    Company name
-                  </label>
-                  <div class="mt-2.5 relative">
-                    <input
-                      v-model="dform.company"
-                      type="text"
-                      name=""
-                      id=""
-                      placeholder="Company name"
-                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-[#48caf2] caret-[#48caf2]"
-                    />
-                  </div>
-                </div>
-
-                <div class="sm:col-span-2">
-                  <label for="" class="text-base font-medium text-gray-900">
-                    Message
-                  </label>
-                  <div class="mt-2.5 relative">
-                    <textarea
-                      name=""
-                      id=""
-                      v-model="dform.message"
-                      placeholder=""
-                      class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:border-[#8c4f0d] caret-[#8c4f0d]"
-                      rows="4"
-                    ></textarea>
-                  </div>
-                </div>
-
-                <div class="sm:col-span-2">
-                  <q-btn
-                  :disable="!isValid"
-                    @click="Send"
-                    type="button"
-                    :loading="loading"
-                    class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-[#8c4f0d] border border-transparent rounded-md focus:outline-none hover:bg-[#c37b2e] focus:bg-[#8c4f0d]"
-                  >
-                    Submit
-                  </q-btn>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+        <div class="pt-10 flex w-full items-center justify-center">
+        <a
+         @click="$router.push({path: '/contact'})"
+          class="bg-[#8c4f0d] xs:flex cursor-pointer text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+          >Message us today!</a
+        >
       </div>
+      </div>
+      
     </div>
   </section>
 </template>
@@ -233,30 +121,26 @@ export default {
     dform: {},
     loading: false,
   }),
-  computed:{
-    isValid(){
-      if(this.dform.fullname && this.dform.email && this.dform.message){
-        return true
+  computed: {
+    isValid() {
+      if (this.dform.fullname && this.dform.email && this.dform.message) {
+        return true;
       }
-      return false
-    }
+      return false;
+    },
   },
   methods: {
     async Send() {
       try {
-        this.loading = true
-        await emailjs.send(
-          'service_qumstvh',
-          'template_6m4td5d',
-          this.dform
-        );
-        this.loading = false
-        this.dform = {}
-        ShowSnack('Mail Sent Successfully', 'positive')
+        this.loading = true;
+        await emailjs.send('service_qumstvh', 'template_6m4td5d', this.dform);
+        this.loading = false;
+        this.dform = {};
+        ShowSnack('Mail Sent Successfully', 'positive');
       } catch (err) {
         console.log(err);
-        this.loading = false
-        ShowSnack('Error Sending Mail', 'negative')
+        this.loading = false;
+        ShowSnack('Error Sending Mail', 'negative');
       }
     },
   },

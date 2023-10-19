@@ -6,7 +6,7 @@
     <HomeAbout id="about"></HomeAbout>
     <HomePlans  id="practise"></HomePlans>
     <HomeForhealthcare  id="teams"></HomeForhealthcare>
-    <HomeFeatures></HomeFeatures>
+    <!-- <HomeFeatures></HomeFeatures> -->
     <HomeNumbers></HomeNumbers>
     <HomeBlog></HomeBlog>
     <HomeContact id="contact"></HomeContact>
