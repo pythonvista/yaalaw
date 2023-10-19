@@ -100,7 +100,7 @@
               Our Mission
             </h3>
             <p class="mt-4 text-base text-gray-600">
-             Provide excellent and outstanding legal services that convey the best possible client results.
+             To provide excellent and outstanding legal services that convey the best possible client results.
             </p>
           </div>
 

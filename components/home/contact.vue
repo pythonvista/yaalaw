@@ -40,7 +40,7 @@
                 +234 811 1111 470
               </p>
               <p class="mt-1 text-lg font-medium text-gray-900">
-                +234 906 0008 147
+                +234 901 986 5853
               </p>
 
               <p class="mt-1 text-lg font-medium text-gray-900">
