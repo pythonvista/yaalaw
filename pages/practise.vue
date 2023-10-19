@@ -1,39 +1,29 @@
 <template>
-  <div class="w-full">
-    <swiper
-      :spaceBetween="30"
-      :slidesPerView="1"
-      :breakpoints="{
-        '640': {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        '768': {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        '1024': {
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
-      }"
-      :autoplay="{
-        delay: 2500,
-        disableOnInteraction: false,
-      }"
-      :pagination="{
-        clickable: true,
-      }"
-      :navigation="false"
-      :modules="modules"
-      class="mySwiper"
-    >
-      <swiper-slide
-        class="overflow-hidden"
-        v-for="(i, index) in areas"
-        :key="index"
+  <section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2
+          class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+        >
+          Practice Areas
+        </h2>
+        <p
+          class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600"
+        >
+          Consequent upon the foregoing, our Firm is always ready and able to
+          handle with highest degree of commitment to discharge any roles within
+          our legal expertise to our clients
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3"
       >
-        <div class="overflow-hidden shadow-md bg-white rounded">
+        <div
+          v-for="(i, index) in areas"
+          :key="index"
+          class="overflow-hidden shadow-md bg-white rounded"
+        >
           <div class="p-8">
             <div class="flex items-center justify-start">
               <img class="flex-shrink-0 w-8 h-auto" :src="i.img" alt="" />
@@ -51,9 +41,8 @@
             <q-btn @click="Open(i)" size="8px" color="brown">Read More</q-btn>
           </div>
         </div>
-      </swiper-slide>
-    </swiper>
-
+      </div>
+    </div>
     <v-dialog
       fullscreen
       :scrim="false"
@@ -84,7 +73,6 @@
               class="text-2xl font-bold leading-tight text-black sm:text-4xl lg:text-4xl"
             >
               {{ dform.title }} <br />
-              
             </h2>
           </div>
 
@@ -97,21 +85,16 @@
         </div>
       </v-card>
     </v-dialog>
-  </div>
+  </section>
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-
-// Import Swiper styles
-import 'swiper/css';
-
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper';
 export default {
+  setup() {
+    definePageMeta({
+      layout: 'home',
+    });
+  },
   data: () => ({
     dialog: false,
     dform: {},
@@ -158,11 +141,7 @@ export default {
       },
     ],
   }),
-  setup() {
-    return {
-      modules: [Autoplay, Pagination, Navigation],
-    };
-  },
+
   methods: {
     Open(team) {
       this.dialog = true;
@@ -172,16 +151,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.swiper {
-  padding: 2.5em 0;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-</style>
+<style></style>
