@@ -8,7 +8,7 @@
         >
           <img
             src="https://i.imgur.com/sxs8AvW.png"
-            class="h-14 sm:h-14"
+            class="h-14 bg-white p-1 border-[1px] border-solid border-[#8c4f0d] rounded shadow-lg sm:h-14"
             alt="Flowbite Logo"
           />
 
