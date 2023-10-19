@@ -40,7 +40,7 @@
   
         <div class="flex w-full justify-center items-center py-3  mt-4">
           <a
-              href="#contact"
+              @click="$router.push({path: '/contact'})"
               class="bg-[#8c4f0d]  xs:flex  cursor-pointer text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
               >Join Our Team</a
             >
