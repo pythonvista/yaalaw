@@ -40,9 +40,9 @@
 
       <div class="flex w-full justify-center items-center py-3  mt-4">
         <a
-            href="#contact"
+            @click="$router.push({path: '/team'})"
             class="bg-[#8c4f0d]  xs:flex  cursor-pointer text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
-            >Join Our Team</a
+            >View More</a
           >
       </div>
     </div>
@@ -122,35 +122,7 @@ export default {
         title: 'LL.B (Hons), B.L',
         img: 'https://i.imgur.com/e9Lnxsw.jpg',
         descr: 'Omowunmi Oludimu is an Associate at YAA Law Consult. She is analytical, enthusiastic and dedicated to using her skills in achieving goals and objectiveswith a high level of excellence.She is a Nigerian trained lawyer who is vast in Property Law Transactions Corporate Law Practice, Litigation (Civil and Criminal Cases).She possesses the ability to draw logical conclusions and is committed to maintaining a high level of communication with clients. Her strong interpersonal skills in Legal Drafting and Research is worthy of mention. <br> <br> Education <br>  - Nigerian Law School, Lagos <br>  - Barrister at Law (B.L) - Olabisi Onabanjo University, Ago-Iwoye, Ogun State <br>  - LL.B (Hons). <br> <br>  Membership and Professional Associations * <br> Nigerian Bar Association'
-      },
-      {
-        name: 'Vincent Akomolafe Taye',
-        title: 'BA, LLB, BL',
-        img: 'https://i.imgur.com/uXuiWNP.jpg',
-        descr:
-          "Vicent Akomolafe Taye is a legal luminary at YAA LAW CONSULT.A versed and thorough bread attorney in corporate law, property and criminal litigation. He is known for his success in creating a legacy of excellence and integrity.His uncommon wealth of experience in management, Human relations, leadership and advocacy reflect splendid ly in his conduct,ideas and profession.He is adored for his unparalleled teaching ability and tremendous practicality of laws.He is notably breaking grounds and limits.He is a standard-bearer per excellence with a can-do it spirit.Vincent had a stint as of one of lead counsel at Fakokunde's chamber.   <h3 style='font-weight: bold; text-decoration:underline;'>Education</h3> <ul> <li>Nigeria law school,Lagos.</li> <li>University of Ife(O.A.U)Ile-Ife,Osun-state.</li> <li>University of Ilorin,(Kwara- state).</li></ul> <h3 style='font-weight: bold; text-decoration:underline;''>Membership and Professional Associations</h3>  <ul> <li>Nigeria Bar Association,Ikeja branch.</li> <li>Human rights lawyers Association, Nigeria.</li> </ul>",
-      },
-      {
-        name: 'Joshua Oluwafemi Abe',
-        title: 'LLB, BL, ACIArb',
-        img: 'https://i.imgur.com/SQfLJjK.jpg',
-        descr:
-          'JOSHUA OLUWAFEMI ABE is an associate at YAA LAW CONSULT. A seasoned legal practitioner with about five years experience of legal practice and research. Joshua obtained his Bachelor of Laws (LL.B) degree from Ekiti State University, Ado-Ekiti, Where he graduated as one of the best students. Before Law school Joshua served as the litigation manager at Babs Akinwumi and co. He is currently pursuing his LL.M. <br> <br> Education <br>- Nigerian Law School(BL-Barrister at Law) <br>- Ekiti State University, Ado-Ekiti, Ekiti State(LLB-Hons, Law) <br> <br> Membership and Professional Associations <br>* Institute of chartered Arbitrators <br>* Nigerian Bar Association',
-      },
-      {
-        name: 'Christiana Aderonke Akanni',
-        title: 'LLB, BL',
-        img: 'https://i.imgur.com/5QHm7z1.jpg',
-        descr:
-          'Christiana Aderonke Akanniis an associate at YAA Law Consult. A dexterous legal practitioner in legal research, corporate practice, family law. Christiana obtained her Bachelor of law (LL.B) degree from University of Abuja. Education - Nigerian Law School (BL) - Univerity of Abuja (LL.B) Membership and Professional Associations * Nigerian Bar Association <br> <br> Education <br>- Nigerian Law School (BL) <br> - Univerity of Abuja (LL.B) <br> <br> Membership and Professional Associations <br>* Nigerian Bar Association',
-      },
-      {
-        name: 'Adebukola Ajibade',
-        title: 'LLB, BL, ACIArb',
-        img: 'https://i.imgur.com/XUN1CuT.jpg',
-        descr:
-          'Adebukola is an associate at Yaa Law Consult , She is a legal Practitioner with over 8 years experience across all sectors of law. She is an expert in formulation of policies and practices that foster good corporate governance, requisite regulatory compliance and drive operational efficiency across companies in all sectors. Her expertise in Family law and litigation is worthy of note. <br> <br> Education <br> - Diploma in Law (Babcock University- Nigeria) <br>- BSc in International Law and Diplomacy (Babcock University- Nigeria) <br>- LLB -Hons, Law (Birmingham City University) <br>- BL- Barrister at Law, (Nigerian Law School) <br> <br>Membership and Professional Associations <br>* Nigerian Bar Association <br>* Institute of Chartered Secretaries and Administrators of Nigeria <br>* The Chartered Institute of Arbitrators',
-      },
+      }
     ],
   }),
   methods: {

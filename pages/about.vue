@@ -19,7 +19,7 @@
         class="grid grid-cols-1 mt-8 md:mt-20 w-full place-items-center gap-y-6 md:grid-cols-3 gap-x-10"
       >
         <div class="col-span-2 xs:order-last md:order-first">
-          <p class="mt-4 text-lg text-gray-700">
+          <p class="mt-4 text-lg xs:text-center md:text-left text-gray-700">
             The cannon upon which any successful organisation predicating its
             objectives on continued life, prosperity and growth is based on
             sound and proper management, skills and formulated policies.<br />No
