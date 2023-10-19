@@ -10,7 +10,7 @@
         <p
           class="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600"
         >
-          Our expert know the best legal approaches to apply to your legal
+          Our experts know the best legal approaches to apply to your legal
           issues
         </p>
       </div>
