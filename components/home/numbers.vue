@@ -15,21 +15,7 @@
       <div
         class="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-4"
       >
-        <div>
-          <h3 class="font-bold text-7xl">
-            <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-[#48caf2]"
-            >
-              6+
-            </span>
-          </h3>
-          <p class="mt-4 text-xl font-medium text-gray-900">
-            Years in business
-          </p>
-          <p class="text-base mt-0.5 text-gray-500">
-            Creating the successful path
-          </p>
-        </div>
+      
 
         <div>
           <h3 class="font-bold text-7xl">
@@ -50,23 +36,13 @@
             <span
               class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-[#48caf2]"
             >
-              40+
+              20+
             </span>
           </h3>
           <p class="mt-4 text-xl font-medium text-gray-900">Companies</p>
           <p class="text-base mt-0.5 text-gray-500">Working for your success</p>
         </div>
-        <div>
-          <h3 class="font-bold text-7xl">
-            <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-[#48caf2]"
-            >
-              166
-            </span>
-          </h3>
-          <p class="mt-4 text-xl font-medium text-gray-900">Cases</p>
-          <p class="text-base mt-0.5 text-gray-500">Around the globe</p>
-        </div>
+       
       </div>
     </div>
   </section>

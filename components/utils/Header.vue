@@ -7,8 +7,8 @@
           class="flex flex-1 relative cursor-pointer items-center"
         >
           <img
-            src="@/assets/logo.jpg"
-            class="h-6 sm:h-9"
+            src="https://i.imgur.com/sxs8AvW.png"
+            class="h-14 sm:h-14"
             alt="Flowbite Logo"
           />
 

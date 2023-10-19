@@ -5,7 +5,7 @@
         <h2
           class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
         >
-         Practice Areas
+         Practice Area
         </h2>
         <p
           class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600"
