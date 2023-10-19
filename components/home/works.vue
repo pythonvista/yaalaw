@@ -116,7 +116,7 @@
               Our Vision
             </h3>
             <p class="mt-4 text-base text-gray-600">
-              creating an outstanding niche, reputation in the legal profession To ensure a profitable base for the firm.
+              Creating an outstanding niche, reputation in the legal profession To ensure a profitable base for the firm.
             </p>
           </div>
 
