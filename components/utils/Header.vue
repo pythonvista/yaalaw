@@ -53,6 +53,13 @@
             </li>
             <li>
               <a
+              @click="$router.push({path: '/articles'})"
+                class="block pr-4 pl-3 text-black font-bold cursor-pointer hover:text-black rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
               @click="$router.push({path: '/contact'})"
                 class="block pr-4 pl-3 text-black font-bold cursor-pointer hover:text-black rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0"
                 >Contact</a
@@ -106,6 +113,12 @@
               <q-icon color="brown" name="image" />
             </q-item-section>
             <q-item-section class="text-black">Gallery</q-item-section>
+          </q-item>
+          <q-item :to="{ path: '/articles' }" clickable v-ripple>
+            <q-item-section avatar>
+              <q-icon color="brown" name="book" />
+            </q-item-section>
+            <q-item-section class="text-black">Blog</q-item-section>
           </q-item>
           <q-item :to="{ path: '/contact' }" clickable v-ripple>
             <q-item-section avatar>
