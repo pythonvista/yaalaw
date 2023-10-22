@@ -20,21 +20,33 @@
       >
         <div class="col-span-2 xs:order-last md:order-first">
           <p class="mt-4 text-lg xs:text-center md:text-left text-gray-700">
-            The cannon upon which any successful organisation predicating its
-            objectives on continued life, prosperity and growth is based on
-            sound and proper management, skills and formulated policies.<br />No
-            safeguard is too much to ensure that competent hands handle and
-            execute the key result area within the requisite regulated framework
-            for any arising legal issue(s) or timely advise against preventive
-            occurrences It is therefore no gainsaying that since we offer within
-            our solid legal services pan-disciplinary knowledge in general
-            administration and dispute resolution. Consequent upon the
-            foregoing, our Firm is always ready and able to handle with highest
-            degree of commitment to discharge any roles within our legal
-            expertise to our clients At YAA Law Consult, our services are well
-            expanded and articulated in high compliance with international
-            corporate practice which have attracted Governments, Public and
-            Private Organisations and individuals as our clients.
+            <span class="font-italic"
+            >YAA Law Consult is a multijurisdictional practice evolving national
+            and international reputable practitioners offering specialist legal
+            support in the field of relevant law practice.</span
+          >
+          <br />
+          We are a Law Firm of Attorneys with distinctive experience in
+          commercial, corporate, conveyance and litigation practice. Our Law
+          Firm consists of Partners and Associates of status, each possesses the
+          legal skill, honesty, competence in all areas of law expertise. Our
+          sterling quality always aid our clients and the prospective clients to
+          achieve their goals and objectives within the extant legal framework.
+          The cannon upon which any successful organisation predicating its
+          objectives on continued life, prosperity and growth is based on sound
+          and proper management, skills and formulated policies, no safeguard is
+          too much to ensure that competent hands handle and execute the key
+          result area within the requisite regulated framework for any arising
+          legal issue(s) or timely advise against preventive occurrences It is
+          therefore no gainsaying that since we offer within our solid legal
+          services pan-disciplinary knowledge in general administration and
+          dispute resolution. Consequent upon the foregoing, our Firm is always
+          ready and able to handle with highest degree of commitment to
+          discharge any roles within our legal expertise to our clients At YAA
+          Law Consults, our services are well expanded and articulated in high
+          compliance with international corporate practice which have attracted
+          Governments, Public and Private Organisations and individuals as our
+          clients
           </p>
         </div>
        
