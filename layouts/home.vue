@@ -32,7 +32,7 @@ export default {
       offset: 200,
       duration: 600,
       easing: 'ease-in-sine',
-      delay: 50,
+      delay: 500,
     });
   },
 };
