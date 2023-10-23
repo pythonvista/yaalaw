@@ -16,7 +16,7 @@
       </div>
 
       <div
-        class="grid grid-cols-1 mt-8 md:mt-20 w-full place-content-center place-items-center gap-y-6 md:grid-cols-3 "
+        class="grid grid-cols-1 mt-8 md:mt-20 w-full place-content-center place-items-center gap-y-6 md:grid-cols-3"
       >
         <div class="xs:col-span-1 md:col-span-2 xs:order-last md:order-first">
           <p class="mt-4 text-lg xs:text-center md:text-left text-gray-700">

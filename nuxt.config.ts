@@ -23,6 +23,10 @@ export default defineNuxtConfig({
         },
         {
           rel: 'stylesheet',
+          href: 'https://unpkg.com/aos@2.3.1/dist/aos.css',
+        },
+        {
+          rel: 'stylesheet',
           href: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
           integrity: 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=',
           crossorigin: '',
@@ -38,6 +42,12 @@ export default defineNuxtConfig({
         },
         {
           src: 'https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js',
+          type: 'text/javascript',
+          crossorigin: '',
+          async: true,
+        },
+        {
+          src: 'https://unpkg.com/aos@2.3.1/dist/aos.js',
           type: 'text/javascript',
           crossorigin: '',
           async: true,

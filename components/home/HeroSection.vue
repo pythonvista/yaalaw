@@ -16,12 +16,12 @@
           class="grid xs:items-start text-left md:items-center grid-cols-1 lg:grid-cols-2"
         >
           <div>
-            <h1
+            <h1 data-aos="fade-right"
               class="font-sans text-lg xs:text-center md:text-left font-normal tracking-tight text-white text-opacity-70"
             >
               YAA Law Consult
             </h1>
-            <p
+            <p data-aos="fade-up"
               class="mt-6 tracking-tighter xs:text-center md:text-left text-white"
             >
               <span

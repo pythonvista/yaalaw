@@ -1,7 +1,7 @@
 <template>
   <section class="py-12 bg-white sm:py-16 lg:py-20">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="text-center">
+    <div  class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div data-aos="fade-down" class="text-center">
         <h2
           class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj"
         >

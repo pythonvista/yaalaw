@@ -28,6 +28,12 @@ export default {
       this.sheet = !this.sheet;
       store.SetNav(this.sheet);
     });
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 50,
+    });
   },
 };
 </script>
