@@ -2,7 +2,7 @@
   <section class="py-10 bg-white sm:py-16 lg:py-24">
     <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center">
-        <h2
+        <h2 data-aos="fade-up"
           class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
         >
           Numbers tell our story
@@ -16,7 +16,7 @@
         class="grid grid-cols-1 gap-8 mt-10 text-center place-items-center place-content-center lg:mt-24 sm:gap-x-8 md:grid-cols-2"
       >
       
-        <div>
+        <div data-aos="fade-left">
           <h3 class="font-bold text-7xl">
             <span
               class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-[#48caf2]"
@@ -30,7 +30,7 @@
           <p class="text-base mt-0.5 text-gray-500">In last 6 years</p>
         </div>
 
-        <div>
+        <div data-aos="fade-right">
           <h3 class="font-bold text-7xl">
             <span
               class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-[#48caf2]"

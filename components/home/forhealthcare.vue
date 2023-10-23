@@ -18,7 +18,7 @@
       <div
         class="grid grid-cols-2 mt-8 text-center sm:mt-16 lg:mt-20 sm:grid-cols-4 gap-y-8 lg:grid-cols-4 gap-x-5"
       >
-        <div @click="Open(team)" v-for="(team, i) in teams" :key="i">
+        <div data-aos="fade-up" @click="Open(team)" v-for="(team, i) in teams" :key="i">
           <div class="hover:text-red-600 cursor-pointer">
             <img
               class="object-cover mx-auto rounded-lg w-28 h-28"

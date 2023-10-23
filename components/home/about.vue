@@ -17,7 +17,7 @@
     <div class="absolute inset-0 block bg-black/60 md:hidden"></div>
 
     <div class="relative flex justify-between items-center  mx-auto sm:px-9 md:px-14">
-      <div class="xs:text-center flex-1 md:text-left">
+      <div data-aos="fade-right" class="xs:text-center flex-1 md:text-left">
         <h2
           class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl"
         >
@@ -36,7 +36,7 @@
               >
             </div>
       </div>
-      <div class="flex-1 xs:hidden md:flex justify-center  items-center">
+      <div data-aos="fade-left" class="flex-1 xs:hidden md:flex justify-center  items-center">
         <img width="60%" class="bg-white p-5 rounded-md shadow-md" src="https://i.imgur.com/sxs8AvW.png" alt="">
       </div>
     </div>

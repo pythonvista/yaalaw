@@ -1,7 +1,7 @@
 <template>
   <section class="py-12 bg-white sm:py-16 lg:py-20">
     <div  class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div data-aos="fade-down" class="text-center">
+      <div data-aos="fade-right" class="text-center">
         <h2
           class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj"
         >
@@ -27,7 +27,7 @@
           <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">
             Providing quality legal service
           </h3>
-          <p class="mt-5 text-base text-gray-600 font-pj">
+          <p data-aos="fade-up" class="mt-5 text-base text-gray-600 font-pj">
             Quality legal service begins with a deep understanding of the law.
           </p>
         </div>
@@ -44,7 +44,7 @@
           <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">
             Global standard,best practice.
           </h3>
-          <p class="mt-5 text-base text-gray-600 font-pj">
+          <p data-aos="fade-up" class="mt-5 text-base text-gray-600 font-pj">
             A global standard that is universally accepted specification,
             criterion that establishes a common baseline for quality.
           </p>
@@ -62,8 +62,8 @@
           <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">
             Expanding frontiers, exceeding expectation.
           </h3>
-          <p class="mt-5 text-base text-gray-600 font-pj">
-            a forward-looking and ambitious approach and performance that goes
+          <p data-aos="fade-up" class="mt-5 text-base text-gray-600 font-pj">
+            A forward-looking and ambitious approach and performance that goes
             beyond what is typically anticipated or demanded.
           </p>
         </div>
@@ -88,7 +88,7 @@
         <div
           class="relative grid grid-cols-1 text-center gap-y-12 md:grid-cols-3 gap-x-12"
         >
-          <div>
+          <div data-aos="fade-up-right">
             <div
               class="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow"
             >
@@ -104,7 +104,7 @@
             </p>
           </div>
 
-          <div>
+          <div data-aos="fade-up">
             <div
               class="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow"
             >
@@ -120,7 +120,7 @@
             </p>
           </div>
 
-          <div>
+          <div data-aos="fade-up-left">
             <div
               class="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow"
             >
