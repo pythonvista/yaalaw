@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="overflow-hidden">
    <HomeHeroSection id="home"></HomeHeroSection>
    
     <HomeWorks></HomeWorks>
