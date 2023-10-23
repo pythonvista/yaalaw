@@ -31,8 +31,7 @@ export default {
     AOS.init({
       offset: 200,
       duration: 600,
-      easing: 'ease-in-sine',
-      delay: 500,
+      delay: 400,
     });
   },
 };
