@@ -21,7 +21,7 @@
             >
               YAA Law Consult
             </h1>
-            <p data-aos="fade-up"
+            <p 
               class="mt-6 tracking-tighter xs:text-center md:text-left text-white"
             >
               <span
